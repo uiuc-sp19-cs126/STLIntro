@@ -30,6 +30,8 @@
 *.exe
 *.out
 *.app
+gradebook
+tests
 
 # Debug symbols
 *.dSYM
