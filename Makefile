@@ -6,7 +6,7 @@ BUILDARGS= -g -std=c++14
 
 all : $(TESTEXE) $(EXE)
 
-tests : tests.cpp
+tests : tests.cpp mathutils.o
 	$(CXX) $(BUILDARGS) -o tests tests.cpp mathutils.o
 
 runtests : tests

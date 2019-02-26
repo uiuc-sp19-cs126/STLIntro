@@ -1,9 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <map>
-#include <string>
 
-using GradebookType = std::map<std::string,int>;
+#include "gradebook.h"
 
 void printGrades(const GradebookType &gradebook);
 

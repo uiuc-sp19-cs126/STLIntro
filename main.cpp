@@ -31,9 +31,20 @@ int main() {
 }
 
 void addGrade(GradebookType &gradebook) {
-    cout << "Teach me to add a grade" << endl;
+    cout << "Please enter a name and grade" << endl;
+    string studentName;
+    int studentGrade;
+    cin >> studentName;
+    cin >> studentGrade;
+    StudentRecord record;
+    record.setName(studentName);
+    record.setScore(studentGrade);
+    gradebook[studentName] = record;
 }
 
 void printGrades(const GradebookType &gradebook) {
-    cout << "Teach me to print the grades" << endl;
+    cout << "Name\tGrade" << endl;
+    for(auto record : gradebook) {
+        cout << record.first << "\t" << record.second.getScore() << endl;
+    }
 }
