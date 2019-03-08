@@ -3,6 +3,7 @@
 
 #include <string>
 #include <map>
+#include <ostream>
 
 class StudentRecord {
     std::string _name;
@@ -15,5 +16,7 @@ public:
 };
 
 using GradebookType = std::map<std::string,StudentRecord>;
+
+std::ostream & operator<<(std::ostream &stream, const StudentRecord record);
 
 #endif

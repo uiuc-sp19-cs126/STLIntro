@@ -45,6 +45,7 @@ void addGrade(GradebookType &gradebook) {
 void printGrades(const GradebookType &gradebook) {
     cout << "Name\tGrade" << endl;
     for(auto record : gradebook) {
-        cout << record.first << "\t" << record.second.getScore() << endl;
+        // cout << record.first << "\t" << record.second.getScore() << endl;
+        cout << record.second << endl;
     }
 }

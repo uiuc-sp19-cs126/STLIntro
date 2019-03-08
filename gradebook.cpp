@@ -16,3 +16,9 @@ void StudentRecord::setScore(int score) {
 void StudentRecord::setName(string name) {
     _name = name;
 }
+
+std::ostream & operator<<(std::ostream &stream, const StudentRecord record) {
+    stream << record.getName() << "\t" << record.getScore();
+    return stream;
+}
+
